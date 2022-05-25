@@ -1,0 +1,7 @@
+INSERT INTO Animals
+VALUES('Slim','Giraffe',1);
+
+SELECT Animals.name,Animals.type,Countries.country
+FROM Animals JOIN Countries  
+ON Animals.country_id= Countries.id
+ORDER BY country;
